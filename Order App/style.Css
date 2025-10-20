@@ -1,0 +1,160 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Red disclaimer bar */
+.disclaimer-cont {
+  background-color: red;
+  color: white;
+  overflow: hidden; /* hides the text outside */
+  white-space: nowrap;
+  font-weight: bold;
+  padding: 8px 0;
+}
+
+.disclaimer {
+  padding: 8px;
+  display: inline-block;
+  padding-left: 100%; /* start off-screen (right side) */
+  animation: scrollText 20s linear infinite; /* 20s loop */
+}
+
+/* Keyframes for right-to-left movement */
+@keyframes scrollText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* Header green area */
+.header {
+  background-color: #00b300;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+#currentStatus {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  
+}
+
+/* Status badges */
+#statuses {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.badge {
+  background-color: white;
+  color: white;
+  background-color: #00b300;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  border: 1px solid white;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+  cursor: pointer;
+}
+
+/* Map section */
+.mapview {
+  width: 100%;
+  height: 300px;
+}
+
+/* Driver details */
+#driver-details {
+  background-color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 22px;
+  font-weight: 700;
+  color: black;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.driver-into{
+  font-size: 22px;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.driver-msg{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+.none {
+  display: none;
+}
+
+
+.call{
+  font-size: 35px;   /* make emoji bigger */
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: center;
+}
+
+/* Buttons container */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 10px 0;
+  background-color: #00b300;
+}
+
+/* Green buttons (upper ones) */
+.btn-green {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 2px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 15%;
+  transition: 0.3s;
+  padding: 15px;
+}
+
+.btn-green:hover {
+  background-color: rgb(247, 245, 245);
+}
+
+/* White buttons (bottom ones) */
+.btn-white {
+  background-color: white;
+  color: #00b300;
+  padding: 10px 20px;
+  border: 2px solid #00b300;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 45%;
+  transition: 0.3s;
+}
+
+.btn-white:hover {
+  background-color: #e6ffe6;
+}
